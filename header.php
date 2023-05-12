@@ -45,19 +45,14 @@
 
 <nav>
 
-<ul>
-
-<li><a href="index.html">Home</a></li>
-
-<li><a href="quem-somos.html">Quem somos</a></li>
-
-<li><a href="produtos.html">Produtos</a></li>
-
-<li><a href="banho-e-tosa.html">Banho e Tosa</a></li>
-
-<li><a href="curiosidades.html">Curiosidades</a></li>
-
-</ul>
+<?php 
+            $args = array(
+              'menu'        => 'header-menu',
+              'menu_class'  => 'nav navbar-nav',
+              'container'   => 'false'
+            );
+            wp_nav_menu( $args );
+          ?>
 
 </nav>
 
