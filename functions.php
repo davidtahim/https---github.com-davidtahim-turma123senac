@@ -8,12 +8,9 @@ function theme_styles() {
  function theme_js(){
     global $wp_scripts;
 
-    wp_enqueue_scripts('bootstrap_js', 
-    get_template_directory_uri().'/js/bootstrap.min.js', 
-    array ('jquery'), '', true);
+    wp_enqueue_scripts('bootstrap_js', get_template_directory_uri().'/js/bootstrap.min.js', array ('jquery'), '', true);
     
-    wp_enqueue_scripts('theme_js', 
-    get_template_directory_uri().'/js/theme.js', array ('jquery'), '', true);
+    wp_enqueue_scripts('theme_js', get_template_directory_uri().'/js/theme.js', array ('jquery'), '', true);
  } 
  add_action( 'wp_enqueue_scripts', 'theme_js' );
 
@@ -28,5 +25,17 @@ function theme_styles() {
 	);
 }
 add_action( 'init', 'register_theme_menus' );
+
+function create_widget ($name, $id, $description) {
+    register_sidebar( array(
+        'name' => __($name),
+        'id' => $id,
+        'description' => __($description),
+        'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+    ));
+}
 
 ?>
