@@ -37,5 +37,10 @@ function create_widget ($name, $id, $description) {
 		'after_title' => '</h3>'
     ));
 }
+create_widget('Início Esquerda', 'front-left', 'Coluna da esquerda da página inicial');
+create_widget('Início Centro', 'front-center', 'Coluna do meio da página inicial');
+create_widget('Início Direita', 'front-right', 'Coluna da direita da página inicial');
 
+create_widget('Lateral da Página', 'page', 'Coluna da página inicial');
+create_widget('Lateral do Blog', 'blog', 'Coluna da página do blog');
 ?>

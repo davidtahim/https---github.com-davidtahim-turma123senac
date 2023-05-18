@@ -22,7 +22,7 @@
 
 <h1>Meu amigo cão - Petshop</h1>
 
-<div id="anuncio"><img src="<?php bloginfo('template_directory');?>/imagens/anuncio-cantinho-feliz-h.jpg" alt="anúncio - cantinho feliz, hotel para cachorro"></div>
+<div id="anuncio"></div>
 
 
 
@@ -32,11 +32,7 @@
 
 <p>nos acompanhe: </p>
 <figure>
-<a href="#"><img src="<?php bloginfo('template_directory');?>/imagens/ms-facebook.gif" alt="facebook"></a> 
-<a href="#"><img src="<?php bloginfo('template_directory');?>/imagens/ms-twitter.gif" alt="twitter"></a> 
-<a href="#"><img src="<?php bloginfo('template_directory');?>/imagens/ms-youtube.gif" alt="youtube"></a> 
-<a href="#"><img src="<?php bloginfo('template_directory');?>/imagens/ms-pinterest.gif" alt="pinterest"></a> 
-<a href="#"><img src="<?php bloginfo('template_directory');?>/imagens/ms-gmais.gif" alt="google mais"></a>
+
 </figure>
 
 </section>
